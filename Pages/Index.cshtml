@@ -1,0 +1,67 @@
+﻿@page
+
+<link rel="stylesheet" href="~/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="~/css/site.css">
+<link rel="stylesheet" href="~/css/chat.css">
+
+<div id="client-register-container" class="d-block">
+    <div class="row p-1">
+        <div class="col-2">My Name</div>
+        <div class="col-10">
+            <input type="text" id="client-name" class="form-control" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-2">
+            My Contact
+        </div>
+        <div class="col-10">
+            <input type="text" id="contact-name" class="form-control" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-7 text-end">
+            <input type="button" id="register-button" class="btn btn-info" value="Enter" />
+        </div>
+    </div>
+</div>
+
+<div id="client-chat-container" class="d-none">
+    <ul>
+        @*<li class="msg-sent">
+            <span class="msg-name">
+                mammmmad :
+            </span>
+            <span class="msg-text">
+                سلام و درود بر شما
+            </span>
+            <span class="msg-date">
+                22:57
+            </span>
+        </li>
+        <li class="msg-received">
+            <span class="msg-name">
+                atousa1999 :
+            </span>
+            <span class="msg-text">
+                علیک سلام
+            </span>
+            <span class="msg-date">
+                22:59
+            </span>
+        </li>*@
+    </ul>
+    <hr />
+    <div class="row p-1">
+        <div class="col-10">
+            <input type="text" placeholder="Message" id="chat-message" class="form-control w-100" />
+        </div>
+        <div class="col-2">
+            <input type="button" id="send-message-button" class="btn btn-success" value="Send" />
+        </div>
+    </div>
+</div>
+
+<script src="~/bootstrap/js/bootstrap.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>

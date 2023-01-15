@@ -1,0 +1,81 @@
+
+#client-chat-container ul {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 8px;
+}
+
+    #client-chat-container ul li {
+        display: block;
+        width: auto;
+        max-width: 80%;
+        padding: 4px;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 4px;
+        border: 1px solid;
+        position: relative;
+    }
+
+        #client-chat-container ul li::marker {
+            display: none;
+        }
+
+        #client-chat-container ul li.msg-sent {
+            background-color: #cacaca;
+            border-color: #606060;
+            color: #0a0a0a;
+            border-radius: 10px 10px 10px 0;
+            float: left;
+            clear: both;
+        }
+
+        #client-chat-container ul li.msg-received {
+            background-color: #08a08a;
+            border-color: #081081;
+            color: #fafafa;
+            border-radius: 10px 10px 0 10px;
+            float: right;
+            clear: both;
+        }
+
+        #client-chat-container ul li .msg-name {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            white-space: nowrap;
+            margin-bottom: 6px;
+        }
+
+        #client-chat-container ul li .msg-text {
+            display: block;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+
+        #client-chat-container ul li .msg-date {
+            display: block;
+            font-size: 12px;
+            margin-top: 10px;
+            clear: both;
+        }
+
+        #client-chat-container ul li.msg-sent .msg-text {
+            text-align: left;
+        }
+
+        #client-chat-container ul li.msg-received .msg-text {
+            text-align: right;
+        }
+
+        #client-chat-container ul li.msg-sent .msg-date {
+            float: left;
+        }
+
+        #client-chat-container ul li.msg-received .msg-date {
+            float: right;
+        }
